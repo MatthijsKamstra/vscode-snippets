@@ -1,0 +1,8 @@
+"private-inline-function-(prif)" : {
+	"prefix":"prif", 
+	"body":"private inline function ${1:function_name}(${2:arguments})${3::${4:Void}
+{
+    ${0:TM_SELECTED_TEXT}
+}", 
+	"description":"Private Inline Function (prif)"
+}

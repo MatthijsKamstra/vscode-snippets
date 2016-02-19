@@ -1,0 +1,7 @@
+"do-while" : {
+	"prefix":"do", 
+	"body":"do${2: {
+	${3}
+} while (${1:condition});", 
+	"description":"do while"
+}

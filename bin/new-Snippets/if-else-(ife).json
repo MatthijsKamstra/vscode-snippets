@@ -1,0 +1,9 @@
+"if-else-(ife)" : {
+	"prefix":"ife", 
+	"body":"if (${1:condition}) {
+	${0:TM_SELECTED_TEXT}
+} else {
+	
+}", 
+	"description":"if-else (ife)"
+}

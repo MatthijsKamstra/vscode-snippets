@@ -1,0 +1,5 @@
+"private-static-var-(prsv)" : {
+	"prefix":"prsv", 
+	"body":"private static var ${1:var_name}${2::${3:Type};", 
+	"description":"Private Static Variable (prsv)"
+}

@@ -1,0 +1,5 @@
+"function-(f)" : {
+	"prefix":"f", 
+	"body":"function ($1) {${0:TM_SELECTED_TEXT};", 
+	"description":"Anonymous Function (f)"
+}

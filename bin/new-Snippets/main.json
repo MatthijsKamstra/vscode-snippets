@@ -1,0 +1,14 @@
+"main" : {
+	"prefix":"main", 
+	"body":"class ${1:name} {
+	
+	public function new () {
+		$0
+	}
+
+	static public function main () {
+		var app = new $1 ()$HX_W_SC;
+	}
+}", 
+	"description":"Main class"
+}

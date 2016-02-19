@@ -1,0 +1,9 @@
+"class" : {
+	"prefix":"class", 
+	"body":"class ${1:name} {
+	public function new () {
+		${0:TM_SELECTED_TEXT}
+	}
+}", 
+	"description":"Class"
+}

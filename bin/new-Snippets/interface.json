@@ -1,0 +1,7 @@
+"interface" : {
+	"prefix":"interface", 
+	"body":"interface ${1:name} {
+	${0:TM_SELECTED_TEXT}	
+}", 
+	"description":"Interface"
+}

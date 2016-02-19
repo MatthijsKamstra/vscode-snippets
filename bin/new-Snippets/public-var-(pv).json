@@ -1,0 +1,5 @@
+"public-var-(pv)" : {
+	"prefix":"pv", 
+	"body":"public var ${1:var_name}${2::${3:Type};", 
+	"description":"Public Variable (pv)"
+}

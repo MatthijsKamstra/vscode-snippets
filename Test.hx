@@ -1,10 +1,10 @@
 class Test {
     public function new () {
         // your code
-        
-     for ( i in 0 ... n ){
-         
-     }
-        
+    }
+    
+    private function hello(str:String):Void
+    {
+        // your code
     }
 }

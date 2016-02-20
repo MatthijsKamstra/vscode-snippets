@@ -1,7 +1,7 @@
 {
 "property-(prop)" : {
 	"prefix":"prop", 
-	"body":["public var ${1:name} (${HX_ORB_W}get_${1:name} M,${HX_CM_W}set_${1:name} )$HX_CRB_C: ${2:type};" ,"private var _$1 : $2;" ,"" ,"function get_$1 ()$HX_CRB_W_C: $2 {" ,"	return _$1;" ,"}" ,"function set_$1(value : $2)$HX_CRB_W_C: $2 {" ,"	return _$1 = value;" ,"}" ,], 
+	"body":["public var ${1:name} (${HX_ORB_W}get_${1:name} M,${HX_CM_W}set_${1:name} )$HX_CRB_C: ${2:type};" ,"private var _$1 : $2;" ,"" ,"function get_$1 ()$HX_CRB_W_C: $2 {" ,"	return _$1;" ,"}" ,"function set_$1(value : $2)$HX_CRB_W_C: $2 {" ,"	return _$1 = value;" ,"}" ], 
 	"description":"Property with getter/setter (prop)"
 }
 }

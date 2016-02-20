@@ -1,7 +1,7 @@
 {
 "public-static-function-(psf)" : {
 	"prefix":"psf", 
-	"body":["public static function ${1:function_name}(${2:arguments})${3::${4:Void}" ,"{" ,"    ${0:// your code}" ,"}" ,], 
+	"body":["public static function ${1:function_name}(${2:arguments}):${4:Void}" ,"{" ,"    ${0:// your code}" ,"}" ], 
 	"description":"Public Static Function (psf)"
 }
 }

@@ -1,7 +1,7 @@
 {
 "private-inline-function-(prif)" : {
 	"prefix":"prif", 
-	"body":["private inline function ${1:function_name}(${2:arguments})${3::${4:Void}" ,"{" ,"    ${0:// your code}" ,"}" ,], 
+	"body":["private inline function ${1:function_name}(${2:arguments}):${4:Void}" ,"{" ,"    ${0:// your code}" ,"}" ], 
 	"description":"Private Inline Function (prif)"
 }
 }

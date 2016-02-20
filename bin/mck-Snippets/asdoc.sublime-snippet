@@ -1,6 +1,5 @@
 <snippet>
-	<content><![CDATA[
-/**
+	<content><![CDATA[/**
  * ${1:varName} 
  *
  * @example		var _${1:varName}:* = new ${1:varName}();
@@ -9,8 +8,7 @@
  * @param		
  *
  * @return
- */
-]]></content>
+ */]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>asdoc</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->

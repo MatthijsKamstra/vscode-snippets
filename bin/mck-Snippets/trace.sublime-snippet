@@ -1,7 +1,5 @@
 <snippet>
-	<content><![CDATA[
-trace( "${1:varName}: " + ${1:varName} );
-]]></content>
+	<content><![CDATA[trace( "${1:varName}: " + ${1:varName} );]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>trace</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->

@@ -1,7 +1,5 @@
 <snippet>
-	<content><![CDATA[
-// [mck] ${1:comment}
-]]></content>
+	<content><![CDATA[// [mck] ${1:comment}]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>mck</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->

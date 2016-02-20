@@ -1,7 +1,7 @@
 {
 "mck_mck" : {
 	"prefix":"mck", 
-	"body":["" ,"// [mck] ${1:comment}" ,"" ], 
+	"body":["// [mck] ${1:comment}" ], 
 	"description":"Commented feedback with my [mck]"
 }
 }

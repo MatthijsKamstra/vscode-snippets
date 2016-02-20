@@ -98,19 +98,19 @@ https://github.com/clemos/haxe-sublime-bundle/tree/master/Snippets
 
 "private-static-inline-var-(prsiv)" : {
 	"prefix":"prsiv", 
-	"body":["private static inline var ${1:CONSTANT_NAME}:{3:Type}${4: = ${5:VALUE};" ], 
+	"body":["private static inline var ${1:CONSTANT_NAME}:${3:Type}${4: = ${5:VALUE};" ], 
 	"description":"Private Static Inline Variable (prsiv)"
 },
 
 "private-static-var-(prsv)" : {
 	"prefix":"prsv", 
-	"body":["private static var ${1:var_name}:{3:Type};" ], 
+	"body":["private static var ${1:var_name}:${3:Type};" ], 
 	"description":"Private Static Variable (prsv)"
 },
 
 "private-var-(pv)" : {
 	"prefix":"prv", 
-	"body":["private var ${1:var_name}:{3:Type};" ], 
+	"body":["private var ${1:var_name}:${3:Type};" ], 
 	"description":"Private variable (prv)"
 },
 
@@ -146,19 +146,19 @@ https://github.com/clemos/haxe-sublime-bundle/tree/master/Snippets
 
 "public-static-inline-var-(psiv)" : {
 	"prefix":"psiv", 
-	"body":["public static inline var ${1:CONSTANT_NAME}:{3:Type}${4: = ${5:VALUE};" ], 
+	"body":["public static inline var ${1:CONSTANT_NAME}:${3:Type}${4: = ${5:VALUE};" ], 
 	"description":"Public Static Inline Variable (psiv)"
 },
 
 "public-static-var-(psv)" : {
 	"prefix":"psv", 
-	"body":["public static var ${1:var_name}:{3:Type};" ], 
+	"body":["public static var ${1:var_name}:${3:Type};" ], 
 	"description":"Public Static Variable (psv)"
 },
 
 "public-var-(pv)" : {
 	"prefix":"pv", 
-	"body":["public var ${1:var_name}:{3:Type};" ], 
+	"body":["public var ${1:var_name}:${3:Type};" ], 
 	"description":"Public Variable (pv)"
 },
 

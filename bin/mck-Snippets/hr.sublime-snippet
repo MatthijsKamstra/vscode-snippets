@@ -1,7 +1,5 @@
 <snippet>
-	<content><![CDATA[
-// ____________________________________ ${1:getter/setter} ____________________________________
-]]></content>
+	<content><![CDATA[// ____________________________________ ${1:getter/setter} ____________________________________]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>hr</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->

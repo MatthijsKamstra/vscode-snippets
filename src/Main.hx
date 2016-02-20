@@ -66,13 +66,12 @@ class Main
                 // trace(tabTrigger.innerData); 
                 // trace(description.innerData); 
                 
-		
 				
                 var _content = content.innerData
 								.replace('"','\\"') // [mck] escape double quotes
                                 .replace(":$TM_SELECTED_TEXT",":// your code")
                                 .replace("${3::${4:Void}}", ":${4:Void}") // [mck] hack private function
-                                .replace("${2::${3:Type}}", ":{3:Type}") // [mck] hack private var
+                                .replace("${2::${3:Type}}", ":${3:Type}") // [mck] hack private var
                                 .replace("${5:$HX_W_OCB", "")
                                 .replace("$HX_W_OCB"," ")
                                 .replace("${HX_ORB_W}"," ")

@@ -29,7 +29,7 @@ class Main
         if(!FileSystem.exists(vscode)) FileSystem.createDirectory(vscode);
         
         convertOriginal(path,out);
-        convertOriginal(path_mck,out_mck,'mck_'); 
+        convertOriginal(path_mck,out_mck,'mck_');
 		
     }
     

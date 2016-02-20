@@ -1,0 +1,7 @@
+{
+"mck_switch" : {
+	"prefix":"switch", 
+	"body":["" ,"switch (${1:arg}) {" ,"	default : trace (\"case '\"+${1:arg}+\"': trace (\"+${1:arg}+\");\");" ,"}		" ,"" ], 
+	"description":"simple switch"
+}
+}

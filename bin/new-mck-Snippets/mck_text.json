@@ -1,0 +1,7 @@
+{
+"mck_text" : {
+	"prefix":"text", 
+	"body":["" ,"" ,"var _textField = new TextField();" ,"var format = new TextFormat (\"_sans\", 14, 0x000000);" ,"_textField.defaultTextFormat = format;" ,"// _textField.embedFonts = true;" ,"_textField.selectable = false;" ,"_textField.text = _text;" ,"_textField.autoSize = TextFieldAutoSize.LEFT;" ,"addChild (_textField);" ,"" ], 
+	"description":"quick textfield"
+}
+}

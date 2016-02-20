@@ -1,0 +1,7 @@
+{
+"mck_sprite" : {
+	"prefix":"sprite", 
+	"body":["" ,"var _w = 100;" ,"var _h = 20;" ,"" ,"var ${1:_sprite} = new Sprite();" ,"${1:_sprite}.name = \"${1:_sprite}\";" ,"${1:_sprite}.graphics.clear();" ,"${1:_sprite}.graphics.beginFill(0xff3333, 1);" ,"${1:_sprite}.graphics.drawRect(0, 0, w, h);" ,"${1:_sprite}.graphics.endFill();" ,"this.addChild(${1:_sprite});" ,"" ], 
+	"description":"quick sprite"
+}
+}

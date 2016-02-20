@@ -1,7 +1,0 @@
-{
-"switchs" : {
-	"prefix":"switch", 
-	"body":["" ,"switch (${1:var}) {" ,"	case 'twittercount': trace ('twittercount');" ,"	default : trace ("case '"+${1:var}+"': trace ('"+${1:var}+"');");" ,"}" ,"" ], 
-	"description":"quick haxe switch"
-}
-}

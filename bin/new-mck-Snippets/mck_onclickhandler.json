@@ -1,0 +1,7 @@
+{
+"mck_onclickhandler" : {
+	"prefix":"onclick", 
+	"body":["" ,"private function ${1:onClickHandler}(e:MouseEvent):Void" ,"{" ,"	var ${2:_sprite} : Sprite = cast (e.currentTarget, Sprite);" ,"	switch (${2:_sprite}.name) {" ,"		case 'foobar': trace ('foobar');" ,"		default : trace (\"case '\"+${2:_sprite}.name+\"': trace ('\"+${2:_sprite}.name+\"');\");" ,"	}" ,"}" ,"" ], 
+	"description":"quick onclickhandler"
+}
+}

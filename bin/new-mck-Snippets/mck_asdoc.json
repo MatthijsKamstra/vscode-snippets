@@ -1,5 +1,5 @@
 {
-"asdoc" : {
+"mck_asdoc" : {
 	"prefix":"asdoc", 
 	"body":["" ,"/**" ," * ${1:varName} " ," *" ," * @example		var _${1:varName}:* = new ${1:varName}();" ," * @see			" ," *" ," * @param		" ," *" ," * @return" ," */" ,"" ], 
 	"description":"Create documentation for a function"

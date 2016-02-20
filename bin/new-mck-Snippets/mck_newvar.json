@@ -1,5 +1,5 @@
 {
-"newvar" : {
+"mck_newvar" : {
 	"prefix":"var", 
 	"body":["" ,"var _${1:className} = new ${1:className}();" ,"_${1:className}.name = '${1:className}';" ,"_${1:className}.x = 0;" ,"_${1:className}.y = 0;" ,"this.addChild(_${1:className});" ,"" ], 
 	"description":"Quick class init"

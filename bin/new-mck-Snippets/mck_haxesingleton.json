@@ -1,5 +1,5 @@
 {
-"haxesingleton" : {
+"mck_haxesingleton" : {
 	"prefix":"singleton", 
 	"body":["" ,"package ${1:package_path};" ,"// $TM_FILEPATH" ,"" ,"class ${TM_FILENAME/(.+)\..+/$1/} {" ,"	" ,"	/**" ,"	* The only instance of this class." ,"	*/" ,"	private static var instance:${TM_FILENAME/(.+)\..+/$1/};" ,"	" ,"	private function new():Void {}" ,"" ,"	public static inline function getInstance():${TM_FILENAME/(.+)\..+/$1/}" ,"	{" ,"		if (instance == null)" ,"			return instance = new ${TM_FILENAME/(.+)\..+/$1/}();" ,"		else" ,"			return instance;" ,"	}" ,"" ,"	/**" ,"	* @example		${TM_FILENAME/(.+)\..+/$1/}.getInstance().init();" ,"	*/" ,"	public function init():Void" ,"	{" ,"		trace ('init');" ,"	} " ,"}" ,"" ], 
 	"description":"Create a haxe singleton"

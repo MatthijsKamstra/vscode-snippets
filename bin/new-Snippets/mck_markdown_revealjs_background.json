@@ -1,7 +1,0 @@
-{
-"markdown_revealjs_background" : {
-	"prefix":"slide", 
-	"body":["" ,"<!-- .slide: data-background="${1:path to file}" -->" ,"" ], 
-	"description":"slide"
-}
-}

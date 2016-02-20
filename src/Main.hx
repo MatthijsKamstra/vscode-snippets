@@ -28,13 +28,12 @@ class Main
         if(!FileSystem.exists(out_mck)) FileSystem.createDirectory(out_mck);
         if(!FileSystem.exists(vscode)) FileSystem.createDirectory(vscode);
         
-        convertOriginal(path);
-        convertOriginal(path_mck,'mck_'); 
-        
-        
+        convertOriginal(path,out);
+        convertOriginal(path_mck,out_mck,'mck_'); 
+		
     }
     
-    private function convertOriginal(_path:String,?pfix:String='')
+    private function convertOriginal(_path:String,_out:String,?pfix:String='')
     {
         if(sys.FileSystem.exists(_path))
 		{
@@ -68,6 +67,7 @@ class Main
                 // trace(description.innerData); 
                 
                 var _content = content.innerData
+								.replace('"','\\"') // [mck] escape double quotes
                                 .replace(":$TM_SELECTED_TEXT",":// your code")
                                 .replace("${3::${4:Void}}", ":${4:Void}") // [mck] hack private function
                                 .replace("${5:$HX_W_OCB", "")
@@ -102,12 +102,12 @@ class Main
                 // [mck] remove that pesky last comma
                 __cont = __cont.substr(0,__cont.length-1);        
 
-                var json  = '"$_filename" : {\n\t"prefix":"${tabTrigger.innerData}", \n\t"body":[${__cont}], \n\t"description":"${description.innerData}"\n}';
+                var json  = '"$pfix$_filename" : {\n\t"prefix":"${tabTrigger.innerData}", \n\t"body":[${__cont}], \n\t"description":"${description.innerData}"\n}';
                 
                 haxejson += json;
                 haxejson += ',\n\n';
                 
-                var _filePath = out + '/' + pfix + _filename + '.json';
+                var _filePath = _out + '/' + pfix + _filename + '.json';
                 var f:FileOutput = File.write(_filePath,false);
                 f.writeString('{\n' + json + '\n}');
                 f.close();

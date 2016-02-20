@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+private function ${1:onClickHandler}(e:MouseEvent):Void
+{
+	var ${2:_sprite} : Sprite = cast (e.currentTarget, Sprite);
+	switch (${2:_sprite}.name) {
+		case 'foobar': trace ('foobar');
+		default : trace ("case '"+${2:_sprite}.name+"': trace ('"+${2:_sprite}.name+"');");
+	}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>onclick</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.haxe</scope>
+	<description>quick onclickhandler</description>
+</snippet>

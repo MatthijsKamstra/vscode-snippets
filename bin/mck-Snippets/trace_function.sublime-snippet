@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+trace  ( '+ ${1:package.functionName}() - args: ' + [ ${2:vars} ] );
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>trace</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.haxe</scope>
+	<description>Create a function trace</description>
+</snippet>

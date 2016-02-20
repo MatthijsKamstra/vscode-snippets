@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+var ${1:_bitmap} = new Bitmap (Assets.getBitmapData ("assets/${2:imagename}"));
+//${1:_bitmap}.alpha = 0.2;
+this.addChild (${1:_bitmap});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>bitmap</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.haxe</scope>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+var _${1:className} = new ${1:className}();
+_${1:className}.name = '${1:className}';
+_${1:className}.x = 0;
+_${1:className}.y = 0;
+this.addChild(_${1:className});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>var</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description>Quick class init</description>
+</snippet>

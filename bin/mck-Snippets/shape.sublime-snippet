@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+var w = 250;
+var h = 50;
+var ${1:shape} = new ${2:Shape}();
+${1:shape}.graphics.clear();
+${1:shape}.graphics.beginFill(0x8e44ad, 1);
+${1:shape}.graphics.drawRoundRect(0, 0, w, h, 2 * 6, 2 * 6);
+${1:shape}.graphics.endFill();
+addChild(${1:shape});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>shape</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description>quick way to make a shape</description>
+</snippet>

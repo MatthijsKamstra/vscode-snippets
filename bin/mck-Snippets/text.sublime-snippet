@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+
+var _textField = new TextField();
+var format = new TextFormat ("_sans", 14, 0x000000);
+_textField.defaultTextFormat = format;
+// _textField.embedFonts = true;
+_textField.selectable = false;
+_textField.text = _text;
+_textField.autoSize = TextFieldAutoSize.LEFT;
+addChild (_textField);
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>text</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description>quick textfield</description>
+</snippet>

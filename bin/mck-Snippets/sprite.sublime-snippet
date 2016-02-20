@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+var _w = 100;
+var _h = 20;
+
+var ${1:_sprite} = new Sprite();
+${1:_sprite}.name = "${1:_sprite}";
+${1:_sprite}.graphics.clear();
+${1:_sprite}.graphics.beginFill(0xff3333, 1);
+${1:_sprite}.graphics.drawRect(0, 0, w, h);
+${1:_sprite}.graphics.endFill();
+this.addChild(${1:_sprite});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>sprite</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.haxe</scope>
+	<description>quick sprite</description>
+</snippet>

@@ -1,7 +1,7 @@
 {
 "public-static-inline-var-(psiv)" : {
 	"prefix":"psiv", 
-	"body":["public static inline var ${1:CONSTANT_NAME}${2::${3:Type}${4: = ${5:VALUE};" ], 
+	"body":["public static inline var ${1:CONSTANT_NAME}:{3:Type}${4: = ${5:VALUE};" ], 
 	"description":"Public Static Inline Variable (psiv)"
 }
 }

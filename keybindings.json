@@ -1,5 +1,8 @@
-// Place your key bindings in this file to overwrite the defaults
 // ~/Volume/path/to/Users/name/Library/Application Support/Code/User
+// Place your key bindings in this file to overwrite the defaults
 [
-	{ "key": "cmd+d", "command": "editor.action.copyLinesDownAction", "when": "editorTextFocus" }
+	{ "key": "cmd+shift+d", "command": "editor.action.copyLinesDownAction", "when": "editorTextFocus" },
+	{ "key": "ctrl+cmd+down", "command": "editor.action.moveLinesDownAction", "when": "editorTextFocus" },
+	{ "key": "ctrl+cmd+up", "command": "editor.action.moveLinesUpAction", "when": "editorTextFocus" }
+
 ]

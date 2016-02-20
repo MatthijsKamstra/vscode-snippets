@@ -66,23 +66,13 @@ class Main
                 // trace(tabTrigger.innerData); 
                 // trace(description.innerData); 
                 
-				/**
-				public var ${1:name}$HX_W_ORB(${HX_ORB_W}get_${1:name}$HX_W_CM,${HX_CM_W}set_${1:name}$HX_W_CRB)$HX_CRB_C:$HX_C_W${2:type};
-private var _$1$HX_W_C:$HX_C_W$2;
-
-function get_$1$HX_W_ORB()$HX_CRB_W_C:$HX_C_W$2$HX_W_OCB{
-	return _$1;
-}
-function set_$1(value$HX_W_C:$HX_C_W$2)$HX_CRB_W_C:$HX_C_W$2$HX_W_OCB{
-	return _$1$HX_W_A=${HX_A_W}value;
-}
-*/ 
-				
+		
 				
                 var _content = content.innerData
 								.replace('"','\\"') // [mck] escape double quotes
                                 .replace(":$TM_SELECTED_TEXT",":// your code")
                                 .replace("${3::${4:Void}}", ":${4:Void}") // [mck] hack private function
+                                .replace("${2::${3:Type}}", ":{3:Type}") // [mck] hack private var
                                 .replace("${5:$HX_W_OCB", "")
                                 .replace("$HX_W_OCB"," ")
                                 .replace("${HX_ORB_W}"," ")

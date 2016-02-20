@@ -1,0 +1,7 @@
+{
+"background" : {
+	"prefix":"back", 
+	"body":["" ,"background: #ffffff url('foobar.png') no-repeat center center;" ,"" ], 
+	"description":"back"
+}
+}

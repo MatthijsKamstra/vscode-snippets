@@ -1,0 +1,7 @@
+{
+"bitmap" : {
+	"prefix":"bitmap", 
+	"body":["" ,"var ${1:_bitmap} = new Bitmap (Assets.getBitmapData ("assets/${2:imagename}"));" ,"//${1:_bitmap}.alpha = 0.2;" ,"this.addChild (${1:_bitmap});" ,"" ], 
+	"description":"bitmap"
+}
+}

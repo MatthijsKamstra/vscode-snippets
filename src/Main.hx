@@ -29,7 +29,7 @@ class Main
         if(!FileSystem.exists(vscode)) FileSystem.createDirectory(vscode);
         
         convertOriginal(path);
-        // convertOriginal(path_mck,'mck_');
+        convertOriginal(path_mck,'mck_'); 
         
         
     }
@@ -38,25 +38,34 @@ class Main
     {
         if(sys.FileSystem.exists(_path))
 		{
-            var haxejson = '\n\n/* \nThis is a converted list of haxe-sublime-bundle snippets created by Clément Charmet.\nhttps://github.com/clemos/haxe-sublime-bundle/tree/master/Snippets\n*/\n\n\n';
             var readme = '| shortcut | description |\n| --- | --- |\n';
+            
+            var haxejson = '\n\n/* \nThis is a converted list of haxe-sublime-bundle snippets created by Clément Charmet.\nhttps://github.com/clemos/haxe-sublime-bundle/tree/master/Snippets\n*/\n\n\n';
+            if(pfix != '') haxejson = '\n\n/* \nThis is a converted list of my sublime-bundle snippets [mck].\n*/\n\n\n';
+
             
             var list :Array<String> = FileSystem.readDirectory(_path);
             for (i in 0...list.length)
             {
+                if(list[i] == '.DS_Store') continue; // [mck] I love OSX, but this stuff ...
+                
                 var _filename = list[i].split('.')[0];
+                // trace('$_filename');
 
                 var xml : Xml = Xml.parse(File.getContent(_path + '/' + list[i]));
                 
                 var fast = new haxe.xml.Fast(xml.firstElement());
                 var content = fast.node.content;
                 var tabTrigger = fast.node.tabTrigger;
-                var description = fast.node.description;
+                // var description = fast.node.description;
+
+                // [mck] not all my snippets have a description
+                var description = (fast.hasNode.description) ? fast.node.description : fast.node.tabTrigger;
                 
                 readme += '| ${tabTrigger.innerData} | ${description.innerData} |\n';
 
                 // trace(tabTrigger.innerData); 
-                // trace(description.innerData);
+                // trace(description.innerData); 
                 
                 var _content = content.innerData
                                 .replace(":$TM_SELECTED_TEXT",":// your code")
@@ -104,6 +113,7 @@ class Main
                 f.close();
                 
             }
+			
             
             var _filePath = vscode + '/' + pfix + 'haxe.json';
             var f:FileOutput = File.write(_filePath,false);
@@ -114,7 +124,6 @@ class Main
             var f:FileOutput = File.write(_filePath,false);
             f.writeString(readme);
             f.close();
-            
             
 		}
 	}

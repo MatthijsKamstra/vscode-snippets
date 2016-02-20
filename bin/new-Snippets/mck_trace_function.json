@@ -1,0 +1,7 @@
+{
+"trace_function" : {
+	"prefix":"trace", 
+	"body":["" ,"trace  ( '+ ${1:package.functionName}() - args: ' + [ ${2:vars} ] );" ,"" ], 
+	"description":"Create a function trace"
+}
+}

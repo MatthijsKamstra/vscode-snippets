@@ -1,0 +1,7 @@
+{
+"remove_children" : {
+	"prefix":"remove", 
+	"body":["" ,"// remove all childern" ,"while (${1:this}.numChildren > 0) {" ,"	${1:this}.removeChildAt(0);" ,"}" ,"" ], 
+	"description":"remove"
+}
+}

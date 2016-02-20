@@ -1,0 +1,7 @@
+{
+"border-debug" : {
+	"prefix":"bor", 
+	"body":["" ,"border: 1px solid pink;" ,"" ], 
+	"description":"bor"
+}
+}

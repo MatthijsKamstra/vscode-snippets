@@ -1,0 +1,7 @@
+{
+"console_log2" : {
+	"prefix":"console", 
+	"body":["" ,"console.log("${1:this}: " + ${1:this});" ,"" ], 
+	"description":"a quick console.log vars"
+}
+}

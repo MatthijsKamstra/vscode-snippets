@@ -1,0 +1,126 @@
+
+
+/* 
+This is a converted list of my sublime-bundle snippets [mck].
+*/
+
+
+"asdoc" : {
+	"prefix":"asdoc", 
+	"body":["" ,"/**" ," * ${1:varName} " ," *" ," * @example		var _${1:varName}:* = new ${1:varName}();" ," * @see			" ," *" ," * @param		" ," *" ," * @return" ," */" ,"" ], 
+	"description":"Create documentation for a function"
+},
+
+"background" : {
+	"prefix":"back", 
+	"body":["" ,"background: #ffffff url('foobar.png') no-repeat center center;" ,"" ], 
+	"description":"back"
+},
+
+"bitmap" : {
+	"prefix":"bitmap", 
+	"body":["" ,"var ${1:_bitmap} = new Bitmap (Assets.getBitmapData ("assets/${2:imagename}"));" ,"//${1:_bitmap}.alpha = 0.2;" ,"this.addChild (${1:_bitmap});" ,"" ], 
+	"description":"bitmap"
+},
+
+"border-debug" : {
+	"prefix":"bor", 
+	"body":["" ,"border: 1px solid pink;" ,"" ], 
+	"description":"bor"
+},
+
+"console_log2" : {
+	"prefix":"console", 
+	"body":["" ,"console.log("${1:this}: " + ${1:this});" ,"" ], 
+	"description":"a quick console.log vars"
+},
+
+"haxesingleton" : {
+	"prefix":"singleton", 
+	"body":["" ,"package ${1:package_path};" ,"// $TM_FILEPATH" ,"" ,"class ${TM_FILENAME/(.+)\..+/$1/} {" ,"	" ,"	/**" ,"	* The only instance of this class." ,"	*/" ,"	private static var instance:${TM_FILENAME/(.+)\..+/$1/};" ,"	" ,"	private function new():Void {}" ,"" ,"	public static inline function getInstance():${TM_FILENAME/(.+)\..+/$1/}" ,"	{" ,"		if (instance == null)" ,"			return instance = new ${TM_FILENAME/(.+)\..+/$1/}();" ,"		else" ,"			return instance;" ,"	}" ,"" ,"	/**" ,"	* @example		${TM_FILENAME/(.+)\..+/$1/}.getInstance().init();" ,"	*/" ,"	public function init():Void" ,"	{" ,"		trace ('init');" ,"	} " ,"}" ,"" ], 
+	"description":"Create a haxe singleton"
+},
+
+"hr" : {
+	"prefix":"hr", 
+	"body":["" ,"// ____________________________________ ${1:getter/setter} ____________________________________" ,"" ], 
+	"description":"Quick hr"
+},
+
+"markdown_revealjs_background" : {
+	"prefix":"slide", 
+	"body":["" ,"<!-- .slide: data-background="${1:path to file}" -->" ,"" ], 
+	"description":"slide"
+},
+
+"mck" : {
+	"prefix":"mck", 
+	"body":["" ,"// [mck] " ,"" ], 
+	"description":"Commented feedback with my [mck]"
+},
+
+"newvar" : {
+	"prefix":"var", 
+	"body":["" ,"var _${1:className} = new ${1:className}();" ,"_${1:className}.name = '${1:className}';" ,"_${1:className}.x = 0;" ,"_${1:className}.y = 0;" ,"this.addChild(_${1:className});" ,"" ], 
+	"description":"Quick class init"
+},
+
+"onclickhandler" : {
+	"prefix":"onclick", 
+	"body":["" ,"private function ${1:onClickHandler}(e:MouseEvent):Void" ,"{" ,"	var ${2:_sprite} : Sprite = cast (e.currentTarget, Sprite);" ,"	switch (${2:_sprite}.name) {" ,"		case 'foobar': trace ('foobar');" ,"		default : trace ("case '"+${2:_sprite}.name+"': trace ('"+${2:_sprite}.name+"');");" ,"	}" ,"}" ,"" ], 
+	"description":"quick onclickhandler"
+},
+
+"remove_children" : {
+	"prefix":"remove", 
+	"body":["" ,"// remove all childern" ,"while (${1:this}.numChildren > 0) {" ,"	${1:this}.removeChildAt(0);" ,"}" ,"" ], 
+	"description":"remove"
+},
+
+"shape" : {
+	"prefix":"shape", 
+	"body":["" ,"var w = 250;" ,"var h = 50;" ,"var ${1:shape} = new ${2:Shape}();" ,"${1:shape}.graphics.clear();" ,"${1:shape}.graphics.beginFill(0x8e44ad, 1);" ,"${1:shape}.graphics.drawRoundRect(0, 0, w, h, 2 * 6, 2 * 6);" ,"${1:shape}.graphics.endFill();" ,"addChild(${1:shape});" ,"" ], 
+	"description":"quick way to make a shape"
+},
+
+"sprite" : {
+	"prefix":"sprite", 
+	"body":["" ,"var _w = 100;" ,"var _h = 20;" ,"" ,"var ${1:_sprite} = new Sprite();" ,"${1:_sprite}.name = "${1:_sprite}";" ,"${1:_sprite}.graphics.clear();" ,"${1:_sprite}.graphics.beginFill(0xff3333, 1);" ,"${1:_sprite}.graphics.drawRect(0, 0, w, h);" ,"${1:_sprite}.graphics.endFill();" ,"this.addChild(${1:_sprite});" ,"" ], 
+	"description":"quick sprite"
+},
+
+"switch" : {
+	"prefix":"switch", 
+	"body":["" ,"switch (${1:arg}) {" ,"	default : trace ("case '"+${1:arg}+"': trace ("+${1:arg}+");");" ,"}		" ,"" ], 
+	"description":"simple switch"
+},
+
+"switchs" : {
+	"prefix":"switch", 
+	"body":["" ,"switch (${1:var}) {" ,"	case 'twittercount': trace ('twittercount');" ,"	default : trace ("case '"+${1:var}+"': trace ('"+${1:var}+"');");" ,"}" ,"" ], 
+	"description":"quick haxe switch"
+},
+
+"text" : {
+	"prefix":"text", 
+	"body":["" ,"" ,"var _textField = new TextField();" ,"var format = new TextFormat ("_sans", 14, 0x000000);" ,"_textField.defaultTextFormat = format;" ,"// _textField.embedFonts = true;" ,"_textField.selectable = false;" ,"_textField.text = _text;" ,"_textField.autoSize = TextFieldAutoSize.LEFT;" ,"addChild (_textField);" ,"" ], 
+	"description":"quick textfield"
+},
+
+"trace" : {
+	"prefix":"trace", 
+	"body":["" ,"trace( "${1:varName}: " + ${1:varName} );" ,"" ], 
+	"description":"Quick var trace"
+},
+
+"trace_debug" : {
+	"prefix":"trace", 
+	"body":["" ,"trace( "## ${1:debug}" );" ,"" ], 
+	"description":"Create debug trace"
+},
+
+"trace_function" : {
+	"prefix":"trace", 
+	"body":["" ,"trace  ( '+ ${1:package.functionName}() - args: ' + [ ${2:vars} ] );" ,"" ], 
+	"description":"Create a function trace"
+}

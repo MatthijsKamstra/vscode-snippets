@@ -1,7 +1,7 @@
+{
 "switch" : {
 	"prefix":"switch", 
-	"body":"switch (${1:TM_SELECTED_TEXT}) {
-	case ${2:pattern} : $0
-}", 
+	"body":["switch (${1:// your code}) {" ,"	case ${2:pattern} : $0" ,"}" ,], 
 	"description":"switch"
+}
 }

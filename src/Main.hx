@@ -17,12 +17,19 @@ class Main
 	public function new()
 	{
         
-        var path = 'bin/Snippets';
-        var out = 'bin/new-Snippets';
+        var path    = 'bin/Snippets';
+        var out     = 'bin/new-Snippets'; 
+        var vscode  = 'bin/vscode'; 
 		
+        if(!FileSystem.exists(path)) FileSystem.createDirectory(path);
+        if(!FileSystem.exists(out)) FileSystem.createDirectory(out);
+        if(!FileSystem.exists(vscode)) FileSystem.createDirectory(vscode);
+        
         if(sys.FileSystem.exists(path))
 		{
             var haxejson = '';
+            var readme = '| shortcut | description |\n| --- | --- |\n';
+            
             var list :Array<String> = FileSystem.readDirectory(path);
             for (i in 0...list.length)
             {
@@ -37,12 +44,19 @@ class Main
                 var tabTrigger = fast.node.tabTrigger;
                 var description = fast.node.description;
                 
-                if(!FileSystem.exists(out)) FileSystem.createDirectory(out);
+                readme += '| ${tabTrigger.innerData} | ${description.innerData} |\n';
 
-                // trace(tabTrigger.innerData);
+                // trace(tabTrigger.innerData); 
                 // trace(description.innerData);
+                /**
+                do${2:$HX_W_OCB{
+	${3:$TM_SELECTED_TEXT}$0
+\}}${HX_CCB_W}while$HX_K_W_ORB(${1:condition});
+*/
+                
                 
                 var _content = content.innerData
+                                .replace(":$TM_SELECTED_TEXT",":// your code")
                                 .replace("${5:$HX_W_OCB", "")
                                 .replace("$HX_W_OCB"," ")
                                 .replace("$HX_K_W_ORB"," ")
@@ -65,25 +79,36 @@ class Main
                                 .replace("${2:${3", "${3")
                                 .replace("\\}", "")
                                 .replace(":$TM_SELECTED_TEXT}$0","}")
-                                .replace(":$TM_SELECTED_TEXT",":TM_SELECTED_TEXT");
+                                ;
+                                
+                var contentArr : Array<String> = _content.split("\n");
+                trace(contentArr.length);                          
+                var __cont = '';
+                for (i in 0...contentArr.length){
+                    __cont += '"' + contentArr[i] + '" ,';
+                }              
 
-
-                var json  = '"$_filename" : {\n\t"prefix":"${tabTrigger.innerData}", \n\t"body":"${_content}", \n\t"description":"${description.innerData}"\n}';
+                var json  = '"$_filename" : {\n\t"prefix":"${tabTrigger.innerData}", \n\t"body":[${__cont}], \n\t"description":"${description.innerData}"\n}';
                 
                 haxejson += json;
                 haxejson += ',\n\n';
                 
                 var _filePath = out + '/' + _filename + '.json';
                 var f:FileOutput = File.write(_filePath,false);
-                f.writeString(json);
+                f.writeString('{\n' + json + '\n}');
                 f.close();
                 
             }
             
-                var _filePath = out + '/haxe.json';
-                var f:FileOutput = File.write(_filePath,false);
-                f.writeString('{\n' + haxejson + '\n}');
-                f.close();
+            var _filePath = vscode + '/haxe.json';
+            var f:FileOutput = File.write(_filePath,false);
+            f.writeString('{\n' + haxejson + '\n}');
+            f.close();
+            
+            var _filePath = vscode + '/shortcuts.md';
+            var f:FileOutput = File.write(_filePath,false);
+            f.writeString(readme);
+            f.close();
             
             
 		}

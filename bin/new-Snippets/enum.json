@@ -1,7 +1,7 @@
+{
 "enum" : {
 	"prefix":"enum", 
-	"body":"enum ${1:name} {
-	${0:TM_SELECTED_TEXT}
-}", 
+	"body":["enum ${1:name} {" ,"	${0:// your code}" ,"}" ,], 
 	"description":"Enum"
+}
 }

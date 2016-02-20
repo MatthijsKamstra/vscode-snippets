@@ -1,7 +1,7 @@
+{
 "for" : {
 	"prefix":"for", 
-	"body":"for ( ${1:i} in ${3:0} ... ${4:n} ){
-	${6}
-}", 
+	"body":["for ( ${1:i} in ${3:0} ... ${4:n} ){" ,"	${6:// your code}$0" ,"}" ,], 
 	"description":"for"
+}
 }

@@ -1,5 +1,7 @@
+{
 "public-static-var-(psv)" : {
 	"prefix":"psv", 
-	"body":"public static var ${1:var_name}${2::${3:Type};", 
+	"body":["public static var ${1:var_name}${2::${3:Type};" ,], 
 	"description":"Public Static Variable (psv)"
+}
 }

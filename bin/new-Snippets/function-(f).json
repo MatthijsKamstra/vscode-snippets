@@ -1,5 +1,7 @@
+{
 "function-(f)" : {
 	"prefix":"f", 
-	"body":"function ($1) {${0:TM_SELECTED_TEXT};", 
+	"body":["function ($1) {${0:// your code};" ,], 
 	"description":"Anonymous Function (f)"
+}
 }

@@ -1,5 +1,7 @@
+{
 "private-var-(pv)" : {
 	"prefix":"prv", 
-	"body":"private var ${1:var_name}${2::${3:Type};", 
+	"body":["private var ${1:var_name}${2::${3:Type};" ,], 
 	"description":"Private variable (prv)"
+}
 }

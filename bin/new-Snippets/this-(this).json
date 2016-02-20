@@ -1,5 +1,7 @@
+{
 "this-(this)" : {
 	"prefix":"this", 
-	"body":"this.${1:property} = $1;", 
+	"body":["this.${1:property} = $1;" ,], 
 	"description":"Constructor Property (this)"
+}
 }

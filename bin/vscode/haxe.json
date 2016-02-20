@@ -1,4 +1,12 @@
 {
+
+
+/* 
+This is a converted list of haxe-sublime-bundle snippets created by Clément Charmet.
+https://github.com/clemos/haxe-sublime-bundle/tree/master/Snippets
+*/
+
+
 "class" : {
 	"prefix":"class", 
 	"body":["class ${1:name} {" ,"	public function new () {" ,"		${0:// your code}" ,"	}" ,"}" ,], 

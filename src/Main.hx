@@ -27,14 +27,12 @@ class Main
         
         if(sys.FileSystem.exists(path))
 		{
-            var haxejson = '';
+            var haxejson = '\n\n/* \nThis is a converted list of haxe-sublime-bundle snippets created by Clément Charmet.\nhttps://github.com/clemos/haxe-sublime-bundle/tree/master/Snippets\n*/\n\n\n';
             var readme = '| shortcut | description |\n| --- | --- |\n';
             
             var list :Array<String> = FileSystem.readDirectory(path);
             for (i in 0...list.length)
             {
-                // trace(list[i]);
-
                 var _filename = list[i].split('.')[0];
 
                 var xml : Xml = Xml.parse(File.getContent(path + '/' + list[i]));
@@ -48,12 +46,6 @@ class Main
 
                 // trace(tabTrigger.innerData); 
                 // trace(description.innerData);
-                /**
-                do${2:$HX_W_OCB{
-	${3:$TM_SELECTED_TEXT}$0
-\}}${HX_CCB_W}while$HX_K_W_ORB(${1:condition});
-*/
-                
                 
                 var _content = content.innerData
                                 .replace(":$TM_SELECTED_TEXT",":// your code")
@@ -82,7 +74,6 @@ class Main
                                 ;
                                 
                 var contentArr : Array<String> = _content.split("\n");
-                trace(contentArr.length);                          
                 var __cont = '';
                 for (i in 0...contentArr.length){
                     __cont += '"' + contentArr[i] + '" ,';

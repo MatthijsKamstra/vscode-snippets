@@ -7,7 +7,7 @@ This is a converted list of my sublime-bundle snippets [mck].
 
 "mck_asdoc" : {
 	"prefix":"asdoc", 
-	"body":["" ,"/**" ," * ${1:varName} " ," *" ," * @example		var _${1:varName}:* = new ${1:varName}();" ," * @see			" ," *" ," * @param		" ," *" ," * @return" ," */" ,"" ], 
+	"body":["/**" ," * ${1:varName} " ," *" ," * @example		var _${1:varName}:* = new ${1:varName}();" ," * @see			" ," *" ," * @param		" ," *" ," * @return" ," */" ], 
 	"description":"Create documentation for a function"
 },
 
@@ -25,7 +25,7 @@ This is a converted list of my sublime-bundle snippets [mck].
 
 "mck_hr" : {
 	"prefix":"hr", 
-	"body":["" ,"// ____________________________________ ${1:getter/setter} ____________________________________" ,"" ], 
+	"body":["// ____________________________________ ${1:getter/setter} ____________________________________" ], 
 	"description":"Quick hr"
 },
 
@@ -85,18 +85,18 @@ This is a converted list of my sublime-bundle snippets [mck].
 
 "mck_trace" : {
 	"prefix":"trace", 
-	"body":["" ,"trace( \"${1:varName}: \" + ${1:varName} );" ,"" ], 
+	"body":["trace( \"${1:varName}: \" + ${1:varName} );" ], 
 	"description":"Quick var trace"
 },
 
 "mck_trace_debug" : {
 	"prefix":"trace", 
-	"body":["" ,"trace( \"## ${1:debug}\" );" ,"" ], 
+	"body":["trace( \"## ${1:debug}\" );" ], 
 	"description":"Create debug trace"
 },
 
 "mck_trace_function" : {
 	"prefix":"trace", 
-	"body":["" ,"trace  ( '+ ${1:package.functionName}() - args: ' + [ ${2:vars} ] );" ,"" ], 
+	"body":["trace  ( '+ ${1:package.functionName}() - args: ' + [ ${2:vars} ] );" ], 
 	"description":"Create a function trace"
 }

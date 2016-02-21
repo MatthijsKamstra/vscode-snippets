@@ -1,7 +1,7 @@
 {
 "mck_trace_debug" : {
 	"prefix":"trace", 
-	"body":["" ,"trace( \"## ${1:debug}\" );" ,"" ], 
+	"body":["trace( \"## ${1:debug}\" );" ], 
 	"description":"Create debug trace"
 }
 }

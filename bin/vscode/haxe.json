@@ -14,7 +14,7 @@ https://github.com/clemos/haxe-sublime-bundle/tree/master/Snippets
 
 "do-while" : {
 	"prefix":"do", 
-	"body":["do${2: {" ,"	${3:// your code}$0" ,"} while (${1:condition});" ], 
+	"body":["do {" ,"	${3:// your code} } while (${1:condition});" ], 
 	"description":"do while"
 },
 
@@ -26,7 +26,7 @@ https://github.com/clemos/haxe-sublime-bundle/tree/master/Snippets
 
 "for" : {
 	"prefix":"for", 
-	"body":["for ( ${1:i} in ${3:0} ... ${4:n} ){" ,"	${6:// your code}$0" ,"}" ], 
+	"body":["for ( ${1:i} in ${3:0} ... ${4:n} ){" ,"	${6:// your code} }" ], 
 	"description":"for"
 },
 
@@ -38,7 +38,7 @@ https://github.com/clemos/haxe-sublime-bundle/tree/master/Snippets
 
 "function-(fun)" : {
 	"prefix":"fun", 
-	"body":["${1:public }function ${2:name} (${3:args})${4: : ${5:Void}${6: {" ,"	${7:// your code}$0" ,"}" ], 
+	"body":["${1:public }function ${2:name} (${3:args})${4: : ${5:Void}${6: {" ,"	${7:// your code} }" ], 
 	"description":"function"
 },
 
@@ -50,7 +50,7 @@ https://github.com/clemos/haxe-sublime-bundle/tree/master/Snippets
 
 "if" : {
 	"prefix":"if", 
-	"body":["if ( ${1:condition} )${2: {" ,"	${3:// your code}$0" ,"}" ], 
+	"body":["if ( ${1:condition} ) {" ,"	${3:// your code} }" ], 
 	"description":"if"
 },
 
@@ -182,6 +182,6 @@ https://github.com/clemos/haxe-sublime-bundle/tree/master/Snippets
 
 "while" : {
 	"prefix":"while", 
-	"body":["while (${1:condition})${2: {" ,"	${3:// your code}$0" ,"}" ], 
+	"body":["while (${1:condition}) {" ,"	${3:// your code} }" ], 
 	"description":"while"
 }

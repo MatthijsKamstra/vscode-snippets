@@ -66,14 +66,19 @@ class Main
                 // trace(tabTrigger.innerData); 
                 // trace(description.innerData); 
                 
+
 				
+			
                 var _content = content.innerData
 								.replace('"','\\"') // [mck] escape double quotes
                                 .replace(":$TM_SELECTED_TEXT",":// your code")
                                 .replace("${3::${4:Void}}", ":${4:Void}") // [mck] hack private function
+                                .replace("${3::${4:Void}}", ":${4:Void}") // [mck] hack private function
                                 .replace("${2::${3:Type}}", ":${3:Type}") // [mck] hack private var
                                 .replace("${5:$HX_W_OCB", "")
+                                .replace("${2:$HX_W_OCB", " ")
                                 .replace("$HX_W_OCB"," ")
+                                .replace("$0\n\\}"," ")
                                 .replace("${HX_ORB_W}"," ")
                                 .replace("$HX_W_CRB"," ")
                                 .replace("$HX_W_CM"," ")
@@ -83,8 +88,6 @@ class Main
                                 .replace("$HX_CRB_W_C"," ")
                                 .replace("$HX_K_W_ORB"," ")
                                 .replace("$HX_ORB_W"," ")
-                                .replace("$HX_W_CRB"," ")
-                                .replace("$HX_W_OCB"," ")
                                 .replace("$HX_W_ORB"," ")
                                 .replace("$HX_W_C"," ")
                                 .replace("$HX_W_TD"," ")

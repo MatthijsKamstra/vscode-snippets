@@ -1,5 +1,5 @@
 {
-"function-(fun)" : {
+"sublime_function-(fun)" : {
 	"prefix":"fun", 
 	"body":["${1:public }function ${2:name} (${3:args}) : ${5:Void} {" ,"	${7:// your code} }" ], 
 	"description":"function"

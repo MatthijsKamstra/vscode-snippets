@@ -16,28 +16,12 @@ class Test {
         // your code
     }
     
-	
-	/**
-	 * varName 
-	 *
-	 * @example		var _varName:* = new varName();
-	 * @see			
-	 *
-	 * @param		
-	 *
-	 * @return
-	 */
-	
-    private function hello(str:String):Void
-    {
-        // your code
-		
-		
-		// [mck] 
-		
-		
-    }
-	
-	public function name (args) : Void {
-		// your code }
+	public function function_name(arguments) : Void
+	{
+		// your code
+	}
+ 
+	function () {
+		// your code
+	};
 }

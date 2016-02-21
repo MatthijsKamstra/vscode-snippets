@@ -1,5 +1,5 @@
 {
-"while" : {
+"sublime_while" : {
 	"prefix":"while", 
 	"body":["while (${1:condition}) {" ,"	${3:// your code} }" ], 
 	"description":"while"

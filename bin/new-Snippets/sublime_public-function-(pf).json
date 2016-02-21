@@ -1,5 +1,5 @@
 {
-"public-function-(pf)" : {
+"sublime_public-function-(pf)" : {
 	"prefix":"pf", 
 	"body":["public function ${1:function_name}(${2:arguments}) : ${4:Void}" ,"{" ,"    ${0:// your code}" ,"}" ], 
 	"description":"Public Function (pf)"

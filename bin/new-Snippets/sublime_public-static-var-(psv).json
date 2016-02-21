@@ -1,5 +1,5 @@
 {
-"public-static-var-(psv)" : {
+"sublime_public-static-var-(psv)" : {
 	"prefix":"psv", 
 	"body":["public static var ${1:var_name} : ${3:Type};" ], 
 	"description":"Public Static Variable (psv)"

@@ -32,7 +32,7 @@ https://github.com/clemos/haxe-sublime-bundle/tree/master/Snippets
 
 "sublime_function-(f)" : {
 	"prefix":"f", 
-	"body":["function ($1) {${0:// your code}" ,"};" ], 
+	"body":["function ($1) {" ,"	${0:// your code}" ,"};" ], 
 	"description":"Anonymous Function (f)"
 },
 

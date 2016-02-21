@@ -1,5 +1,5 @@
 {
-"public-static-inline-function-(psif)" : {
+"sublime_public-static-inline-function-(psif)" : {
 	"prefix":"psif", 
 	"body":["public static inline function ${1:function_name}(${2:arguments}) : ${4:Void}" ,"{" ,"    ${0:// your code}" ,"}" ], 
 	"description":"Public Static Inline Function (psif)"

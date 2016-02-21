@@ -1,5 +1,5 @@
 {
-"switch" : {
+"sublime_switch" : {
 	"prefix":"switch", 
 	"body":["switch (${1:// your code}) {" ,"	case ${2:pattern} : $0" ,"}" ], 
 	"description":"switch"

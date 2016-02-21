@@ -1,5 +1,5 @@
 {
-"private-function-(prf)" : {
+"sublime_private-function-(prf)" : {
 	"prefix":"prf", 
 	"body":["private function ${1:function_name}(${2:arguments}) : ${4:Void}" ,"{" ,"    ${0:// your code}" ,"}" ], 
 	"description":"Private Function (prf)"

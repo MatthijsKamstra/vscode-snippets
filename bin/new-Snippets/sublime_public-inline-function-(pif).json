@@ -1,5 +1,5 @@
 {
-"public-inline-function-(pif)" : {
+"sublime_public-inline-function-(pif)" : {
 	"prefix":"pif", 
 	"body":["public inline function ${1:function_name}(${2:arguments}) : ${4:Void}" ,"{" ,"    ${0:// your code}" ,"}" ], 
 	"description":"Public Inline Function (pif)"

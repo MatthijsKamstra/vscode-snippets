@@ -1,5 +1,5 @@
 {
-"class" : {
+"sublime_class" : {
 	"prefix":"class", 
 	"body":["class ${1:name} {" ,"	public function new () {" ,"		${0:// your code}" ,"	}" ,"}" ], 
 	"description":"Class"

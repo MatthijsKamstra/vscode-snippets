@@ -1,5 +1,5 @@
 {
-"var-(v)" : {
+"sublime_var-(v)" : {
 	"prefix":"v", 
 	"body":["var ${1:name}${2: : ${3:Dynamic}}${4: = ${5:value}" ,"};" ], 
 	"description":"Variable"

@@ -1,5 +1,5 @@
 {
-"property-(prop)" : {
+"sublime_property-(prop)" : {
 	"prefix":"prop", 
 	"body":["public var ${1:name} ( get_${1:name} , set_${1:name} ) : ${2:type};" ,"private var _$1 : $2;" ,"" ,"function get_$1 () : $2 {" ,"	return _$1;" ,"}" ,"function set_$1(value : $2) : $2 {" ,"	return _$1 = value;" ,"}" ], 
 	"description":"Property with getter/setter (prop)"

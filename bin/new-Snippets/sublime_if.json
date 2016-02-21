@@ -1,5 +1,5 @@
 {
-"if" : {
+"sublime_if" : {
 	"prefix":"if", 
 	"body":["if ( ${1:condition} ) {" ,"	${3:// your code} }" ], 
 	"description":"if"

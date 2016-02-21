@@ -1,5 +1,5 @@
 {
-"private-var-(pv)" : {
+"sublime_private-var-(pv)" : {
 	"prefix":"prv", 
 	"body":["private var ${1:var_name} : ${3:Type};" ], 
 	"description":"Private variable (prv)"

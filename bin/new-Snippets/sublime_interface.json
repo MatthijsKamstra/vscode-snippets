@@ -1,5 +1,5 @@
 {
-"interface" : {
+"sublime_interface" : {
 	"prefix":"interface", 
 	"body":["interface ${1:name} {" ,"	${0:// your code}	" ,"}" ], 
 	"description":"Interface"

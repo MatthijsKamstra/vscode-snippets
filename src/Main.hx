@@ -43,9 +43,6 @@ class Main
             var haxejson = '\n\n/* \nThis is a converted list of haxe-sublime-bundle snippets created by Clément Charmet.\nhttps://github.com/clemos/haxe-sublime-bundle/tree/master/Snippets\n*/\n\n\n';
             if(pfix != 'sublime_') haxejson = '\n\n/* \nThis is a converted list of my sublime-bundle snippets [mck].\n*/\n\n\n';
 
-			if(pfix == 'sublime_') pfix = '';
-
-            
             var list :Array<String> = FileSystem.readDirectory(_path);
             for (i in 0...list.length)
             {
@@ -129,7 +126,6 @@ class Main
                 
             }
 			
-            
             var _filePath = vscode + '/' + pfix + 'haxe.json';
             var f:FileOutput = File.write(_filePath,false);
             f.writeString(haxejson.substr(0,haxejson.length-3));
@@ -146,7 +142,7 @@ class Main
 	}
 
 
-	/**
+	/** 
 	 * okay this is just me being lazy 
 	 */
 	private function createHaxeJson() : Void

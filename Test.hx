@@ -37,4 +37,7 @@ class Test {
 		
 		
     }
+	
+	public function name (args) : Void {
+		// your code }
 }

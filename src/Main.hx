@@ -28,9 +28,10 @@ class Main
         if(!FileSystem.exists(out_mck)) FileSystem.createDirectory(out_mck);
         if(!FileSystem.exists(vscode)) FileSystem.createDirectory(vscode);
         
-        convertOriginal(path,out);
+        convertOriginal(path,out,'sublime_');
         convertOriginal(path_mck,out_mck,'mck_');
 		
+		createHaxeJson();
     }
     
     private function convertOriginal(_path:String,_out:String,?pfix:String='')
@@ -38,9 +39,11 @@ class Main
         if(sys.FileSystem.exists(_path))
 		{
             var readme = '| shortcut | description |\n| --- | --- |\n';
-            
+            			
             var haxejson = '\n\n/* \nThis is a converted list of haxe-sublime-bundle snippets created by Clément Charmet.\nhttps://github.com/clemos/haxe-sublime-bundle/tree/master/Snippets\n*/\n\n\n';
-            if(pfix != '') haxejson = '\n\n/* \nThis is a converted list of my sublime-bundle snippets [mck].\n*/\n\n\n';
+            if(pfix != 'sublime_') haxejson = '\n\n/* \nThis is a converted list of my sublime-bundle snippets [mck].\n*/\n\n\n';
+
+			if(pfix == 'sublime_') pfix = '';
 
             
             var list :Array<String> = FileSystem.readDirectory(_path);
@@ -66,7 +69,6 @@ class Main
                 // trace(tabTrigger.innerData); 
                 // trace(description.innerData); 
                 
-		
 			
                 var _content = content.innerData
 								.replace('"','\\"') // [mck] escape double quotes
@@ -77,6 +79,8 @@ class Main
                                 .replace("${5:$HX_W_OCB", " ")
                                 .replace("${2:$HX_W_OCB", " ")
                                 .replace("$0\n\\}"," ")
+                                .replace("}};","}\n};")
+                                .replace("${TM_FILENAME/(.+)\\..+/$1/}","${TM_FILENAME}")
                                 .replace("$HX_W_OCB"," ")
                                 .replace("$HX_W_ORB"," ")
                                 .replace("$HX_W_CRB"," ")
@@ -96,12 +100,12 @@ class Main
                                 .replace("$HX_A_W", " ")
                                 .replace("${HX_A_W}" , " ")
                                 .replace("${HX_CCB_W}", " ")
-                                .replace("\\}}", "}")
+                                // .replace("\\}}", "}")
                            
-                                .replace("}}", "}")
+                                // .replace("}}", "}")
                         
                                 .replace("${2:${3", "${3")
-                                .replace("\\}", "")
+                                // .replace("\\}", "")
                                 .replace(":$TM_SELECTED_TEXT}$0","}")
                                 ;
                                 
@@ -137,6 +141,47 @@ class Main
             f.close();
             
 		}
+		
+		
+	}
+
+
+	/**
+	 * okay this is just me being lazy 
+	 */
+	private function createHaxeJson() : Void
+	{
+		var haxeJsonHeader = "/*
+	 // Place your snippets for Haxe here. Each snippet is defined under a snippet name and has a prefix, body and 
+	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	 // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
+	 // Example:
+	 \"Print to console\": {
+		\"prefix\": \"log\",
+		\"body\": [
+			\"console.log('$1');\",
+			\"$2\"
+		],
+		\"description\": \"Log output to console\"
+	}
+*/";
+		
+		var mck = File.getContent(vscode + '/mck_haxe.json');
+		var sublime = File.getContent(vscode + '/sublime_haxe.json');
+		
+		var _filePath = vscode + '/haxe.json';
+		var f:FileOutput = File.write(_filePath,false);
+		f.writeString('{\n\n'+haxeJsonHeader+mck+','+sublime+'\n\n}');
+		f.close();
+		
+		var mck = File.getContent(vscode + '/mck_shortcuts.md');
+		var sublime = File.getContent(vscode + '/sublime_shortcuts.md');
+		
+		var _filePath = vscode + '/haxe_shortcuts.md';
+		var f:FileOutput = File.write(_filePath,false);
+		f.writeString('#Shortcuts\nshortcuts from sublime\n\n\n'+sublime+'\nshortcuts from sublime(personal)\n\n\n'+mck);
+		f.close();
+            
 	}
 
 	

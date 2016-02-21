@@ -65,8 +65,8 @@ class Main
 
                 // trace(tabTrigger.innerData); 
                 // trace(description.innerData); 
-                
-			
+                 
+		 
                 var _content = content.innerData
 								.replace('"','\\"') // [mck] escape double quotes
                                 .replace(":$TM_SELECTED_TEXT",":// your code")

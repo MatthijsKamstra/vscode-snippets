@@ -10,8 +10,7 @@
 | remove | remove |
 | shape | quick way to make a shape |
 | sprite | quick sprite |
-| switch | simple switch |
-| switch | quick haxe switch |
+| switch | Switch with case and default |
 | text | quick textfield |
 | trace | Quick var trace |
 | trace | Create debug trace |

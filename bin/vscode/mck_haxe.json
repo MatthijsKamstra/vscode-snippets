@@ -67,14 +67,8 @@ This is a converted list of my sublime-bundle snippets [mck].
 
 "mck_switch" : {
 	"prefix":"switch", 
-	"body":["" ,"switch (${1:arg}) {" ,"	default : trace (\"case '\"+${1:arg}+\"': trace (\"+${1:arg}+\");\");" ,"}		" ,"" ], 
-	"description":"simple switch"
-},
-
-"mck_switchs" : {
-	"prefix":"switch", 
-	"body":["" ,"switch (${1:var}) {" ,"	case 'twittercount': trace ('twittercount');" ,"	default : trace (\"case '\"+${1:var}+\"': trace ('\"+${1:var}+\"');\");" ,"}" ,"" ], 
-	"description":"quick haxe switch"
+	"body":["switch (${1:var}) {" ,"	case '${0:string}': trace ('${0:string}');" ,"	default : trace (\"case '\"+${1:var}+\"': trace ('\"+${1:var}+\"');\");" ,"}" ], 
+	"description":"Switch with case and default"
 },
 
 "mck_text" : {

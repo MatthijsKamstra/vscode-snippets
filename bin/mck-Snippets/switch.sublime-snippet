@@ -1,12 +1,11 @@
 <snippet>
-	<content><![CDATA[
-switch (${1:arg}) {
-	default : trace ("case '"+${1:arg}+"': trace ("+${1:arg}+");");
-}		
-]]></content>
+	<content><![CDATA[switch (${1:var}) {
+	case '${0:string}': trace ('${0:string}');
+	default : trace ("case '"+${1:var}+"': trace ('"+${1:var}+"');");
+}]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>switch</tabTrigger>
+	<description>Switch with case and default</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.haxe</scope>
-	<description>simple switch</description>
 </snippet>

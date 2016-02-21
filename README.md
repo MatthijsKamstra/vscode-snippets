@@ -17,4 +17,4 @@ It's WIP (I will fix stuff when I run into them).
 
 The shortcut-list for Haxe: [haxe.json](https://github.com/MatthijsKamstra/vscode-snippets/blob/master/bin/vscode/haxe.json)
 
-And the list of shortcuts: [shortcuts.md](https://github.com/MatthijsKamstra/vscode-snippets/blob/master/bin/vscode/shortcuts.md)
+And the list of shortcuts: [shortcuts.md](https://github.com/MatthijsKamstra/vscode-snippets/blob/master/bin/vscode/haxe_shortcuts.md)

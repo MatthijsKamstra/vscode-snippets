@@ -73,6 +73,7 @@ class Main
                                 .replace("${3::${4:Void}}", " : ${4:Void}") // [mck] hack private function
                                 .replace("${4:$HX_W_C:$HX_C_W${5:Void}}${6:$HX_W_OCB", " : ${5:Void} ") // [mck] hack fun(ction)
                                 .replace("${2::${3:Type}}", " : ${3:Type}") // [mck] hack private var
+                                .replace("$HX_TD_W${4:n}}$HX_W_CRB", " ${4:n} ") // [mck] hack for loop
                                 .replace("${5:$HX_W_OCB", " ")
                                 .replace("${2:$HX_W_OCB", " ")
                                 .replace("$0\n\\}","\n")

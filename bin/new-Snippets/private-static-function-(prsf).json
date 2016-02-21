@@ -1,7 +1,7 @@
 {
 "private-static-function-(prsf)" : {
 	"prefix":"prsf", 
-	"body":["private static function ${1:function_name}(${2:arguments}):${4:Void}" ,"{" ,"    ${0:// your code}" ,"}" ], 
+	"body":["private static function ${1:function_name}(${2:arguments}) : ${4:Void}" ,"{" ,"    ${0:// your code}" ,"}" ], 
 	"description":"Private Static Function (prsf)"
 }
 }

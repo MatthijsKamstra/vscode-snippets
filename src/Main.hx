@@ -66,36 +66,35 @@ class Main
                 // trace(tabTrigger.innerData); 
                 // trace(description.innerData); 
                 
-
-				
+		
 			
                 var _content = content.innerData
 								.replace('"','\\"') // [mck] escape double quotes
                                 .replace(":$TM_SELECTED_TEXT",":// your code")
-                                .replace("${3::${4:Void}}", ":${4:Void}") // [mck] hack private function
-                                .replace("${3::${4:Void}}", ":${4:Void}") // [mck] hack private function
-                                .replace("${2::${3:Type}}", ":${3:Type}") // [mck] hack private var
-                                .replace("${5:$HX_W_OCB", "")
+                                .replace("${3::${4:Void}}", " : ${4:Void}") // [mck] hack private function
+                                .replace("${4:$HX_W_C:$HX_C_W${5:Void}}${6:$HX_W_OCB", " : ${5:Void} ") // [mck] hack fun(ction)
+                                .replace("${2::${3:Type}}", " : ${3:Type}") // [mck] hack private var
+                                .replace("${5:$HX_W_OCB", " ")
                                 .replace("${2:$HX_W_OCB", " ")
-                                .replace("$HX_W_OCB"," ")
                                 .replace("$0\n\\}"," ")
-                                .replace("${HX_ORB_W}"," ")
+                                .replace("$HX_W_OCB"," ")
+                                .replace("$HX_W_ORB"," ")
                                 .replace("$HX_W_CRB"," ")
                                 .replace("$HX_W_CM"," ")
+                                .replace("$HX_W_C"," ")
+                                .replace("$HX_W_TD"," ")
+                                .replace("$HX_W_A"," ")
+                                .replace("${HX_ORB_W}"," ")
                                 .replace("$HX_CRB_C"," ")
                                 .replace("${HX_CM_W}"," ")
                                 .replace("$HX_C_W"," ")
                                 .replace("$HX_CRB_W_C"," ")
                                 .replace("$HX_K_W_ORB"," ")
                                 .replace("$HX_ORB_W"," ")
-                                .replace("$HX_W_ORB"," ")
-                                .replace("$HX_W_C"," ")
-                                .replace("$HX_W_TD"," ")
                                 .replace("$HX_TD_W", " ")
                                 .replace("$HX_C_W"," ")
-                                .replace("$HX_W_A"," ")
-                                .replace("${HX_A_W}" , " ")
                                 .replace("$HX_A_W", " ")
+                                .replace("${HX_A_W}" , " ")
                                 .replace("${HX_CCB_W}", " ")
                                 .replace("\\}}", "}")
                            

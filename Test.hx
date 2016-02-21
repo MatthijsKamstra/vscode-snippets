@@ -22,6 +22,7 @@ class Test {
 	}
  
 	function () {
-		// your code
+		for ( i in 0 ... n} ) {
+			// your code }
 	};
 }

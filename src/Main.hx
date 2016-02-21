@@ -75,7 +75,7 @@ class Main
                                 .replace("${2::${3:Type}}", " : ${3:Type}") // [mck] hack private var
                                 .replace("${5:$HX_W_OCB", " ")
                                 .replace("${2:$HX_W_OCB", " ")
-                                .replace("$0\n\\}"," ")
+                                .replace("$0\n\\}","\n")
                                 .replace("}};","}\n};")
                                 .replace("${TM_FILENAME/(.+)\\..+/$1/}","${TM_FILENAME}")
                                 .replace("$HX_W_OCB"," ")

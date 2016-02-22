@@ -13,8 +13,22 @@ This is my complex way of updating my snippets and the default in the haxe-subli
 
 -----
 
-It's WIP (I will fix stuff when I run into them).
+## The original haxe-sublime-bundle snippets 
 
-The shortcut-list for Haxe: [haxe.json](https://github.com/MatthijsKamstra/vscode-snippets/blob/master/bin/vscode/haxe.json)
+The converted shortcut file for VScode: (sublime_)[haxe.json](https://github.com/MatthijsKamstra/vscode-snippets/blob/master/bin/vscode/sublime_haxe.json)
 
-And the list of shortcuts: [shortcuts.md](https://github.com/MatthijsKamstra/vscode-snippets/blob/master/bin/vscode/shortcuts.md)
+And this is a list of the shortcuts: (sublime_)[shortcuts.md](https://github.com/MatthijsKamstra/vscode-snippets/blob/master/bin/vscode/sublime_shortcuts.md)
+
+### My personal haxe-sublime snippets
+
+(mck_)[haxe.json](https://github.com/MatthijsKamstra/vscode-snippets/blob/master/bin/vscode/mck_haxe.json) 
+(mck_)[shortcuts.md](https://github.com/MatthijsKamstra/vscode-snippets/blob/master/bin/vscode/mck_shortcuts.md)
+
+and the combination of the two in just one file
+
+[haxe.json](https://github.com/MatthijsKamstra/vscode-snippets/blob/master/bin/vscode/haxe.json) 
+[shortcuts.md](https://github.com/MatthijsKamstra/vscode-snippets/blob/master/bin/vscode/shortcuts.md)
+
+## Keybindings
+
+I found a couple changes I needed: [keybindings.json](https://github.com/MatthijsKamstra/vscode-snippets/keybindings.json)

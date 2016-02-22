@@ -17,7 +17,6 @@ This is my complex way of updating my snippets and the default in the haxe-subli
 
 The converted shortcut file for VScode: (sublime_)[haxe.json](https://github.com/MatthijsKamstra/vscode-snippets/blob/master/bin/vscode/sublime_haxe.json)
 
-<<<<<<< HEAD
 And this is a list of the shortcuts: (sublime_)[shortcuts.md](https://github.com/MatthijsKamstra/vscode-snippets/blob/master/bin/vscode/sublime_shortcuts.md)
 
 ### My personal haxe-sublime snippets
@@ -33,6 +32,3 @@ and the combination of the two in just one file
 ## Keybindings
 
 I found a couple changes I needed: [keybindings.json](https://github.com/MatthijsKamstra/vscode-snippets/keybindings.json)
-=======
-And the list of shortcuts: [shortcuts.md](https://github.com/MatthijsKamstra/vscode-snippets/blob/master/bin/vscode/haxe_shortcuts.md)
->>>>>>> 4b6e9070930a2fc7bad366a13ec2d05f03b39b74

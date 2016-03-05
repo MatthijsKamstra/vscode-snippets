@@ -1,0 +1,7 @@
+{
+"mck_class" : {
+	"prefix":"class", 
+	"body":["package ${2:packagename};" ,"" ,"class ${1:name}" ,"{" ,"" ,"	public function new(${4:arg}) " ,"	{" ,"		${0:// your code}" ,"	}" ,"" ,"}" ], 
+	"description":"[mck] Class"
+}
+}

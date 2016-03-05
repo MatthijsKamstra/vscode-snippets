@@ -86,6 +86,7 @@ class Main
                                 .replace("$HX_W_C"," ")
                                 .replace("$HX_W_TD"," ")
                                 .replace("$HX_W_A"," ")
+                                .replace("$HX_W_SC"," ")
                                 .replace("${HX_ORB_W}"," ")
                                 .replace("$HX_CRB_C"," ")
                                 .replace("${HX_CM_W}"," ")

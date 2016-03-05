@@ -21,12 +21,12 @@ And this is a list of the shortcuts: (sublime_)[shortcuts.md](https://github.com
 
 ### My personal haxe-sublime snippets
 
-(mck_)[haxe.json](https://github.com/MatthijsKamstra/vscode-snippets/blob/master/bin/vscode/mck_haxe.json) 
+(mck_)[haxe.json](https://github.com/MatthijsKamstra/vscode-snippets/blob/master/bin/vscode/mck_haxe.json)   
 (mck_)[shortcuts.md](https://github.com/MatthijsKamstra/vscode-snippets/blob/master/bin/vscode/mck_shortcuts.md)
 
 and the combination of the two in just one file
 
-[haxe.json](https://github.com/MatthijsKamstra/vscode-snippets/blob/master/bin/vscode/haxe.json) 
+[haxe.json](https://github.com/MatthijsKamstra/vscode-snippets/blob/master/bin/vscode/haxe.json)   
 [shortcuts.md](https://github.com/MatthijsKamstra/vscode-snippets/blob/master/bin/vscode/shortcuts.md)
 
 ## Keybindings

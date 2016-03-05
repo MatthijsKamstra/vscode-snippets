@@ -4,5 +4,5 @@
 	<tabTrigger>trace</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.haxe</scope>
-	<description>Quick var trace</description>
+	<description>[mck] trace var</description>
 </snippet>

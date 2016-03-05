@@ -4,5 +4,5 @@
 	<tabTrigger>trace</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.haxe</scope>
-	<description>Create a function trace</description>
+	<description>[mck] trace function</description>
 </snippet>

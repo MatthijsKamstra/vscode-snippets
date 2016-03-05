@@ -2,6 +2,6 @@
 "mck_trace" : {
 	"prefix":"trace", 
 	"body":["trace( \"${1:varName}: \" + ${1:varName} );" ], 
-	"description":"Quick var trace"
+	"description":"[mck] trace var"
 }
 }

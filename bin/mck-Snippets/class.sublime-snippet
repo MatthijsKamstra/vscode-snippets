@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[package ${2:packagename};
+
+class ${1:name}
+{
+
+	public function new(${4:arg}) 
+	{
+		${0:// your code}
+	}
+
+}]]></content>
+	<tabTrigger>class</tabTrigger>
+	<scope>source.haxe.2</scope>
+	<description>[mck] Class</description>
+</snippet>

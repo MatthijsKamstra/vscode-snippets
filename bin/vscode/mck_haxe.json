@@ -17,6 +17,12 @@ This is a converted list of my sublime-bundle snippets [mck].
 	"description":"bitmap"
 },
 
+"mck_class" : {
+	"prefix":"class", 
+	"body":["package ${2:packagename};" ,"" ,"class ${1:name}" ,"{" ,"" ,"	public function new(${4:arg}) " ,"	{" ,"		${0:// your code}" ,"	}" ,"" ,"}" ], 
+	"description":"[mck] Class"
+},
+
 "mck_haxesingleton" : {
 	"prefix":"singleton", 
 	"body":["" ,"package ${1:package_path};" ,"// $TM_FILEPATH" ,"" ,"class ${TM_FILENAME} {" ,"	" ,"	/**" ,"	* The only instance of this class." ,"	*/" ,"	private static var instance:${TM_FILENAME};" ,"	" ,"	private function new():Void {}" ,"" ,"	public static inline function getInstance():${TM_FILENAME}" ,"	{" ,"		if (instance == null)" ,"			return instance = new ${TM_FILENAME}();" ,"		else" ,"			return instance;" ,"	}" ,"" ,"	/**" ,"	* @example		${TM_FILENAME}.getInstance().init();" ,"	*/" ,"	public function init():Void" ,"	{" ,"		trace ('init');" ,"	} " ,"}" ,"" ], 
@@ -80,17 +86,17 @@ This is a converted list of my sublime-bundle snippets [mck].
 "mck_trace" : {
 	"prefix":"trace", 
 	"body":["trace( \"${1:varName}: \" + ${1:varName} );" ], 
-	"description":"Quick var trace"
+	"description":"[mck] trace var"
 },
 
 "mck_trace_debug" : {
 	"prefix":"trace", 
 	"body":["trace( \"## ${1:debug}\" );" ], 
-	"description":"Create debug trace"
+	"description":"[mck] trace debug"
 },
 
 "mck_trace_function" : {
 	"prefix":"trace", 
 	"body":["trace  ( '+ ${1:package.functionName}() - args: ' + [ ${2:vars} ] );" ], 
-	"description":"Create a function trace"
+	"description":"[mck] trace function"
 }

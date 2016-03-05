@@ -2,6 +2,7 @@
 | --- | --- |
 | asdoc | Create documentation for a function |
 | bitmap | bitmap |
+| class | [mck] Class |
 | singleton | Create a haxe singleton |
 | hr | Quick hr |
 | mck | Commented feedback with my [mck] |
@@ -12,6 +13,6 @@
 | sprite | quick sprite |
 | switch | Switch with case and default |
 | text | quick textfield |
-| trace | Quick var trace |
-| trace | Create debug trace |
-| trace | Create a function trace |
+| trace | [mck] trace var |
+| trace | [mck] trace debug |
+| trace | [mck] trace function |
